@@ -12,14 +12,14 @@ body {
   line-height: 1.6;
 }
 
-/* Wrapper */
+/* Wrapper - Centers content on the page */
 #wrapper {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Header */
+/* Header styling */
 header {
   background-color: #333;
   color: white;
@@ -31,7 +31,7 @@ header h1 {
   font-size: 2.5em;
 }
 
-/* Navigation */
+/* Navigation styling */
 nav {
   background-color: #444;
   margin: 20px 0;
@@ -57,7 +57,7 @@ nav ul li a:hover {
   color: #ff6347;
 }
 
-/* Main Content */
+/* Main Content Section */
 main {
   background-color: #fff;
   padding: 20px;
@@ -91,7 +91,7 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* Images */
+/* Styling for images */
 .flex-img {
   width: 100%;
   max-width: 600px;
@@ -108,7 +108,7 @@ ul li {
   margin: 20px 0;
 }
 
-/* Form Page Styling */
+/* Form styling */
 form {
   background-color: #f9f9f9;
   padding: 20px;
@@ -146,7 +146,7 @@ textarea {
   height: 150px;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
   background-color: #333;
   color: white;
@@ -213,3 +213,63 @@ a:hover {
   color: #45a049;
 }
 
+/* Media Queries */
+
+/* For tablet-sized screens (600px to 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  #wrapper {
+    width: 90%; /* Slightly wider wrapper for tablets */
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    font-size: 1.1em;
+  }
+
+  .flex-img, .responsive-img {
+    max-width: 100%; /* Makes images responsive */
+  }
+
+  form {
+    padding: 15px; /* Adjust padding for tablet screens */
+  }
+}
+
+/* For mobile screens (less than 600px) */
+@media (max-width: 599px) {
+  #wrapper {
+    width: 95%; /* More narrow for mobile */
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em; /* Smaller header for mobile */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stacks navigation items for mobile */
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.2em;
+  }
+
+  .flex-img, .responsive-img {
+    max-width: 100%; /* Full-width images for mobile */
+  }
+
+  form {
+    padding: 10px; /* Smaller form padding for mobile */
+  }
+}
