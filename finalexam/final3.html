@@ -1,0 +1,122 @@
+<!--
+  Name: Sai Manotej Nelakurthi
+  Date: May 6, 2025
+  File: final3.html - Form Page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop Culture Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wrapper">
+    <!-- Start Header -->
+    <header>
+      <h1>Pop Culture Fan Survey</h1>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Top Navigation -->
+    <nav>
+      <ul class="topnav">
+        <li><a href="final1.html">Home</a></li>
+        <li><a href="final2.html">Details</a></li>
+        <li><a href="final3.html">Form</a></li>
+        <li><a href="final4.html">Credits</a></li>
+        <li><a href="mailto:snelakur@stumail.jccc.edu">Email</a></li>
+      </ul>
+    </nav>
+    <!-- End Top Navigation -->
+
+    <!-- Start Main Content -->
+    <main>
+      <section>
+        <h2>We want to hear from you!</h2>
+        <!-- Fragment Identifier Link Example -->
+        <p><a href="#feedback">Skip to Feedback Section</a></p>
+        <p>Fill out the form below to let us know your favorite parts of pop culture!</p>
+
+        <form action="#" method="post">
+          <!-- Text Input Fields -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="favchar">Favorite Character:</label>
+          <input type="text" id="favchar" name="favchar"><br><br>
+
+          <!-- Checkboxes Section -->
+          <fieldset>
+            <legend>Which do you enjoy the most?</legend>
+            <input type="checkbox" id="movies" name="media" value="Movies">
+            <label for="movies">Movies</label><br>
+
+            <input type="checkbox" id="anime" name="media" value="Anime">
+            <label for="anime">Anime</label><br>
+
+            <input type="checkbox" id="series" name="media" value="TV Series">
+            <label for="series">TV Series</label><br>
+          </fieldset><br>
+
+          <!-- Radio Buttons Section -->
+          <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br>
+          </fieldset><br>
+
+          <!-- Date Input -->
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob"><br><br>
+
+          <!-- Dropdown Selection -->
+          <label for="genre">Favorite Genre:</label>
+          <select id="genre" name="genre">
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="comedy">Comedy</option>
+          </select><br><br>
+
+          <!-- Textarea with Fragment ID -->
+          <h3 id="feedback">Tell us more about your favorites:</h3>
+          <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+          <!-- Submit and Reset Buttons -->
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
+      </section>
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Start Bottom Navigation -->
+    <nav>
+      <ul class="bottomnav">
+        <li><a href="final1.html">Home</a></li>
+        <li><a href="final2.html">Details</a></li>
+        <li><a href="final3.html">Form</a></li>
+        <li><a href="final4.html">Credits</a></li>
+        <li><a href="mailto:snelakur@stumail.jccc.edu">Email</a></li>
+      </ul>
+    </nav>
+    <!-- End Bottom Navigation -->
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Sai Manotej Nelakurthi. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
